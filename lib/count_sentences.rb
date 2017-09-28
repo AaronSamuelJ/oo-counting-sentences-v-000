@@ -12,6 +12,7 @@ class String
   def count_sentences
     binding.pry
     self.scan(/[^\.!?]+[\.!?]/).map(&:strip).count # scan has regex to split string and strip will remove trailing spaces.
+    # binding.pry
   end
 
 end
