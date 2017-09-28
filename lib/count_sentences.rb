@@ -10,7 +10,7 @@ class String
     self.end_with?("!")
   end
   def count_sentences
-    self.scan(/[^\.!?]+[\.!?]/).map(&:strip).count # scan has regex to split string and strip will remove trailing spaces.
+    self.scan(/[^\.!?]+[\.!?]/).count # scan has regex to split string and strip will remove trailing spaces.
     binding.pry
   end
 
